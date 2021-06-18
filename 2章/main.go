@@ -13,7 +13,7 @@ func main() {
 	})
 	
 	log.Println("startserver")
-	server := &http.Server{Addr: ".8080"}
+	server := &http.Server{Addr: ":8080"}
 	if err := server.ListenAndServe(); err != nil {
 		log.Println(err)
 	}
